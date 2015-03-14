@@ -1,0 +1,7 @@
+image: ubuntu
+script:
+  - apt-get update
+  - apt-get install -y cabal-install
+  - cabal update
+  - cabal install shellcheck
+  - shellcheck mac
