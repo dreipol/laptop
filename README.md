@@ -75,12 +75,9 @@ For example:
 ```sh
 #!/bin/sh
 
-brew_tap 'caskroom/cask'
-brew_install_or_upgrade 'brew-cask'
-
-brew cask install dropbox
-brew cask install google-chrome
-brew cask install rdio
+brew_cask_install_or_upgrade 'dropbox'
+brew_cask_install_or_upgrade 'google-chrom'
+brew_cask_install_or_upgrade 'rdio'
 
 gem_install_or_update 'parity'
 
