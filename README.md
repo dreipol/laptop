@@ -41,7 +41,7 @@ What it sets up
 * [ImageMagick] for cropping and resizing images
 * [Node.js] and [NPM], for running apps and installing JavaScript packages
 * [Postgres] for storing relational data
-* [Python2] and Python3 for the win
+* [Python] for the win (2.7 and 3.4)
 * [virtualenv] and [virtualenvwrapper] for managing different python versions 
 * [Zsh] as your shell
 * [Virtualbox] for running virtual machines 
