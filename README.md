@@ -21,7 +21,6 @@ Download, review, then execute the script:
 
 ```
 curl --remote-name https://raw.githubusercontent.com/dreipol/laptop/master/mac
-less mac
 sh mac 2>&1 | tee ~/laptop.log
 ```
 
