@@ -164,6 +164,7 @@ pip install virtualenvwrapper
 append_to_zshrc 'source /usr/local/share/python/virtualenvwrapper.sh' 1
 
 brew_install_or_upgrade 'openssl'
+brew_install_or_upgrade 'node'
 brew unlink openssl && brew link openssl --force
 brew_install_or_upgrade 'libyaml'
 
@@ -171,9 +172,11 @@ brew tap caskroom/cask
 brew_install_or_upgrade 'brew-cask'
 
 brew_cask_install_or_upgrade 'virtualbox'
-brew_cask_install_or_upgrade 'vagrant'
-brew_install_or_upgrade 'docker'
-brew_install_or_upgrade 'boot2docker'
+brew_cask_install_or_upgrade 'kitematic'
+brew_cask_install_or_upgrade 'xscope'
+brew_cask_install_or_upgrade 'dropbox'
+brew_cask_install_or_upgrade 'google-chrome'
+
 
 brew_install_or_upgrade 'tree'
 brew_install_or_upgrade 'watch'
