@@ -10,10 +10,11 @@ based on what is already installed on the machine.
 Requirements
 ------------
 
-We only support [OS X Yosemite (10.10)](https://www.apple.com/osx/) yet.
+You need to install Xcode Command Line Tools first.
 
-Older versions may work but aren't tested. Bug reports for older
-versions are welcome.
+```
+xcode-select --install
+```
 
 # Install
 
