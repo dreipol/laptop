@@ -110,6 +110,10 @@ brew_cask_install_or_upgrade() {
   fi
 }
 
+upgrade_newest_npm() {
+  npm install -g npm@latest
+}
+
 brew_launchctl_restart() {
   local name="$(brew_expand_alias "$1")"
   local domain="homebrew.mxcl.$name"
@@ -161,11 +165,11 @@ brew_install_or_upgrade 'python3'
 append_to_zshrc 'export WORKON_HOME="$HOME/.virtualenvs"' 1
 pip install virtualenv
 pip install virtualenvwrapper
-pip install nodeenv
 append_to_zshrc 'source /usr/local/share/python/virtualenvwrapper.sh' 1
 
 brew_install_or_upgrade 'openssl'
 brew_install_or_upgrade 'node'
+upgrade_newest_npm
 brew unlink openssl && brew link openssl --force
 brew_install_or_upgrade 'libyaml'
 
@@ -182,6 +186,7 @@ brew_cask_install_or_upgrade 'onepass'
 
 brew_install_or_upgrade 'tree'
 brew_install_or_upgrade 'watch'
+brew_install_or_upgrade 'skitch'
 
 if [ -f "$HOME/.laptop.local" ]; then
   . "$HOME/.laptop.local"
