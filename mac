@@ -161,6 +161,7 @@ brew_install_or_upgrade 'python3'
 append_to_zshrc 'export WORKON_HOME="$HOME/.virtualenvs"' 1
 pip install virtualenv
 pip install virtualenvwrapper
+pip install nodeenv
 append_to_zshrc 'source /usr/local/share/python/virtualenvwrapper.sh' 1
 
 brew_install_or_upgrade 'openssl'
@@ -176,7 +177,8 @@ brew_cask_install_or_upgrade 'kitematic'
 brew_cask_install_or_upgrade 'xscope'
 brew_cask_install_or_upgrade 'dropbox'
 brew_cask_install_or_upgrade 'google-chrome'
-
+brew_cask_install_or_upgrade 'firefox'
+brew_cask_install_or_upgrade 'onepass'
 
 brew_install_or_upgrade 'tree'
 brew_install_or_upgrade 'watch'
